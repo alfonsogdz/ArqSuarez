@@ -10,9 +10,9 @@ require_once("base_datos.php"); // se necesita un archivo externo
 
 		// web service 1, Consultar por folio
 		// isset() -> determinar si existe una variable o valor
-		if(isset($_GET['id'])) {
+		if(isset($_GET['folio'])) {
 			// buscar producto
-			$folio = $_GET['id'];
+			$folio = $_GET['folio'];
 
 			// búsqueda por número de folio en base de datos
 			$producto = buscar_folio($folio);
